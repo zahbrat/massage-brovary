@@ -1,0 +1,129 @@
+*{
+  font-family: 'Comfortaa', sans-serif;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  outline: none;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/f/f1/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%91%D1%80%D0%BE%D0%B2%D0%B0%D1%80%D1%96%D0%B2.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 50px 0;
+}
+
+section {
+  margin: 2.5rem 0;
+}
+
+section.contact{
+  margin-bottom: 0;
+}
+
+p{
+  font-size: 17.5px;
+}
+
+a {
+  background-color: transparent;
+}
+
+img {
+  border-style: none;
+}
+
+.title {
+  text-align: center;
+}
+
+.article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  opacity: 0.9;
+  padding: 5px 0;
+  background-color: #fff;
+  border: 5px solid #333;
+  border-radius: 15px;
+  box-shadow: #181818 -5px 5px 20px 5px;
+}
+
+.article .container{
+  display: flex;
+  flex-direction: column;
+  gap:25px;
+}
+
+.article__title {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.article__wrapper{
+  display: flex;
+  gap:25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact h2 {
+  margin-bottom: 25px;
+}
+
+.contact__items {
+  display: flex;
+  gap: 15px;
+}
+
+.contact__card {
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  text-align: center;
+  gap: 10px;
+}
+
+.contact__card:hover {
+  box-shadow: var(--bs-gray) -4px 5px 5px 0px;
+  color: #fff;
+}
+
+.contact__card:nth-child(1) {
+  border: 2px solid #6fd404;
+}
+
+.contact__card:hover:nth-child(1) {
+  background: #6fd404;
+}
+
+.contact__card:nth-child(2) {
+  border: 2px solid #8f5db7;
+}
+
+.contact__card:hover:nth-child(2) {
+  background: #8f5db7;
+}
+
+.contact i {
+  font-size: 50px;
+}
+
+@media (max-width:575px){
+  .article__wrapper{
+    flex-direction: column;
+  }
+  .container{
+    margin: 0;
+  }
+}
